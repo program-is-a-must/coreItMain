@@ -1,0 +1,47 @@
+nav {
+  background: rgba(29, 49, 38, 0.8);
+
+  font-size: 1.21rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav img {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  width: 20px;
+  padding: 10px 30px;
+}
+
+p {
+  color: #fff;
+}
+
+img {
+  margin-left: 12px;
+}
+
+.search {
+  margin-right: 89px;
+}
+
+.menus {
+  display: flex;
+  gap: 73px;
+}
+
+.menus a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.country {
+  margin-right: 12px;
+}
