@@ -1,37 +1,41 @@
 body {
   font-family: "Space Grotesk", sans-serif;
 }
+
+main {
+  overflow: hidden;
+}
+
 .first-show {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  top: 90px;
-  left: 150px;
 }
 
 .first-show-container {
   background-image: linear-gradient(
       to right,
-      rgba(29, 49, 38, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(29, 49, 38, 0.9),
+      rgba(255, 255, 255, 0.4)
     ),
     url("https://coreit.themepanthers.com/demo/wp-content/uploads/2024/12/home-1-1-slider-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+
   height: 100vh;
 }
 
 .margin {
+  padding-top: 100px;
   display: block;
-  align-items: center;
+  align-items: center !important;
   width: 40%;
   text-align: left;
 }
 
 .flatbutton {
+  padding-bottom: 23px;
   width: 40%;
   display: flex;
   align-items: center;
@@ -63,7 +67,8 @@ body {
 }
 
 .main-title p {
-  color: #455954;
+  color: #f3f2ed;
+  padding-top: 22px;
   font-size: 1.15rem;
   font-weight: 400;
   margin: 0;
@@ -327,11 +332,16 @@ button {
 }
 
 .third {
+  width: 100%;
+  background-color: #f9f8f2;
+}
+
+.third-wrapper {
   padding-top: 65px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f9f8f2;
+  padding-bottom: 65px;
 }
 
 .third_display {
@@ -345,18 +355,20 @@ button {
   padding: 10px 30px;
   border-radius: 20px;
   border: #1d3126 solid 1px;
-  width: 20%;
+  width: 23%;
   display: flex;
-
+  justify-content: center;
   font-size: 15px;
   font-weight: 500;
   align-items: center;
+  margin-left: 34px;
 }
 
 .T-R-HEAD {
   font-size: 32px;
   color: #1d3126;
   line-height: 45px;
+  margin-left: 34px;
 }
 
 .T-R-HEAD h1 {
@@ -364,7 +376,13 @@ button {
 }
 
 .third_right {
-  width: 50%;
+  width: 60%;
+  border-left: #e4e2d7 solid 1px;
+}
+
+.T-R-block {
+  margin-left: 34px;
+  width: 100%;
 }
 
 .sign {
@@ -374,19 +392,39 @@ button {
 
 .T-R-Flex p {
   color: #6b666a;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .T-R-Flex {
-  gap: 20px;
+  display: flex;
+}
+
+.border-flex {
+  border-right: #e4e2d7 solid 1px;
+  border-bottom: #e4e2d7 solid 1px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+#border-flex-3 {
+  border-bottom: #f9f8f2 solid 1px;
+}
+
+.num p {
+  font-size: 54px;
+  font-weight: 600;
+  color: #1d3126;
+  margin-left: 34px;
 }
 
 .num {
-  font-size: 34px;
-  font-weight: 600;
   display: flex;
   align-items: center;
+  border-left: #e4e2d7 solid 1px;
+  border-bottom: #e4e2d7 solid 1px;
+  justify-content: center;
 }
 
 hr {
@@ -411,13 +449,11 @@ hr {
 }
 
 .fourth-left {
-  width: 45%;
-  margin: 0;
-  line-height: 1;
+  width: 48%;
 }
 
 .serv_btn p {
-  width: 10%;
+  width: 10% !important;
   border-radius: 25px;
   color: #1d3126 !important;
   font-weight: 500;
@@ -428,17 +464,19 @@ hr {
   align-items: center;
   justify-content: center;
   background-image: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  margin-bottom: 16px;
 }
 
 .fourth-left h1 {
-  font-size: 48px;
+  font-size: 54px;
   color: #1d3126;
-  margin: 0;
-  line-height: 1;
+  margin-bottom: 16px;
 }
 
 .fourth-left p {
   color: #6b666a;
+  margin-bottom: 26px;
+  width: 87%;
 }
 
 .service-btn {
@@ -446,6 +484,7 @@ hr {
   background: #1d3126;
   color: #ffffff;
   border-radius: 30px;
+  margin-top: 23px;
   width: 20%;
   font-size: 18px;
   font-weight: 500;
@@ -493,14 +532,16 @@ h3 {
   border: #888 solid 1px;
   border-radius: 25px;
   width: 100%;
-  height: 260px;
+  height: 284.8px;
 }
 
 .f-r-grid-2 h1 {
   color: #1d3126;
   font-size: 20px;
+  font-weight: 600;
   margin-left: 13px;
   margin-right: 13px;
+  margin-bottom: 11px;
 }
 
 .f-r-grid-2 p {
@@ -508,6 +549,9 @@ h3 {
   font-size: 16px;
   margin-left: 13px;
   margin-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid_flex {
@@ -544,6 +588,12 @@ h3 {
   justify-content: center;
 }
 
+.f-r-grid-center p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #grid-change {
   background: #f9f8f2;
 }
@@ -559,10 +609,12 @@ h3 {
 }
 
 .fourth-call {
+  margin-top: 89px;
   border-radius: 100px;
   box-shadow: #6b666a 0px 0px 28px -5px;
   background: #ffffff;
   padding: 10px 30px;
+  margin-bottom: 79px;
 }
 
 .call_flx {
@@ -619,4 +671,1267 @@ h3 {
   margin: 0;
   font-size: 17px;
   color: #1d3126;
+}
+
+.fifth-page {
+  width: 100%;
+  background: #1d3126;
+}
+
+.fifth-page-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 45px;
+}
+
+.fifth-center {
+  background-image: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\green.jpeg");
+  border-radius: 25px;
+  color: #f9f8f2;
+  font-weight: 500;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  padding: 7px 30px;
+  border: #334e39 solid 1px;
+}
+
+.fifth-header p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9f8f2;
+  font-size: 54px;
+}
+
+.fifth-page-wrapper img {
+  height: 583px;
+  width: 1200px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-wrapper-image {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sixth-page {
+  width: 100%;
+  background: #fff;
+}
+
+.sixth-page-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #002b22;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-bottom: 45px;
+}
+
+.sd-left {
+  margin-left: 23px;
+  width: 50%;
+}
+
+.sld-design-wrapper {
+  display: flex;
+  gap: 13px;
+  width: auto;
+  border-radius: 100px;
+  background: #05362c;
+  padding: 5px 5px;
+}
+
+.sixth-divide {
+  padding-top: 34px;
+  display: flex;
+  width: 100%;
+}
+
+.sdl-1 {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 9px;
+}
+
+.sdl-2 {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 9px;
+}
+
+.sdl-3 {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 9px;
+}
+
+.sdl-4 {
+  display: flex;
+}
+
+.sld-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.sld-design p {
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.sld-design img {
+  height: 19px;
+  width: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sld-design-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: #455954 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sd-left-full {
+  width: 100%;
+}
+
+.sdr-display {
+  width: 100%;
+  display: flex;
+}
+
+.sd-right {
+  width: 50%;
+}
+
+.sdr-right {
+  margin-top: 78px;
+  margin-right: 67px;
+}
+
+.sdr-r-circle {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: black;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sdr-r-circle span {
+  font-weight: 600;
+}
+
+.started-now {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sdr-left ul li {
+  list-style: url("https://coreit.themepanthers.com/demo/wp-content/uploads/2024/12/list-icons.png");
+  line-height: 1.65;
+  text-decoration: underline;
+  font-size: 18px;
+  color: #7f9590;
+  text-align: left;
+}
+.sdr-left p {
+  font-size: 18px;
+  color: #7f9590;
+  width: 78%;
+}
+
+.seventh-page {
+  width: 100%;
+  padding-top: 60px;
+  background: #ffffff;
+}
+
+.seventh-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seventh-display {
+  display: flex;
+  width: 100%;
+  gap: 34px;
+}
+
+.seventh-left {
+  width: 32%;
+}
+
+.seventh-btn {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  width: 42%;
+  border-radius: 100px;
+  padding: 10px 30px;
+  font-weight: 500;
+  border: #f9f8f2 solid 1px;
+}
+
+.seventh-left h1 {
+  font-size: 54px;
+  font-weight: 530;
+  color: #002b22;
+}
+
+.seventh-big-text h1 {
+  font-size: 135px;
+  font-weight: 700;
+  color: #f9f8f2;
+  transform: translate(50%, 50%) rotate(-90deg);
+  margin-top: 254px;
+  text-align: left;
+  margin-right: 345.6px;
+}
+
+.ONTOPbigText {
+  transform: translateY(-380px);
+  margin-left: 68px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: #494848 solid 1px;
+
+  justify-content: center;
+}
+
+.center-big {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 89%;
+  margin-left: auto;
+  margin-top: 67px;
+  margin-right: auto;
+}
+
+.center-big h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #002b22;
+  text-align: center;
+}
+
+.center-big p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b666a;
+  text-align: center;
+}
+
+.srm-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.SeVeNREadMoRe {
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: #1d3126 solid 1px;
+  height: 34px;
+  width: 59%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.seventh-right {
+  width: 50%;
+}
+
+.seventh-r-display {
+  width: 100%;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.seventh-box {
+  width: 383.95px;
+  height: 507.8px;
+  border: #e4e2d7 solid 1px;
+  border-radius: 15px;
+}
+
+.sb-1 {
+  margin-right: 43px;
+  border-bottom: #e4e2d7 solid 1px;
+}
+
+.sb-1 h2 {
+  margin-left: 29px;
+  font-size: 16px;
+  color: #6b666a;
+  font-weight: 500;
+  line-height: 0.65;
+  text-transform: uppercase;
+  margin-top: 56px;
+}
+
+.sb-1 h1 {
+  line-height: 0.95;
+  margin-left: 29px;
+  font-size: 22px;
+  color: #1d3126;
+  font-weight: 563;
+  width: 78%;
+  margin-bottom: 26px;
+}
+
+.sb-2 {
+  margin-top: 46px;
+  width: 100%;
+}
+
+.sb-circle-join {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.sb-circle {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  border: #e4e2d7 solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f8f2;
+}
+
+.sb-circle img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb-circle-overlay {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background: #f9f8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-23px);
+}
+
+.sb-circle-overlay p {
+  color: #1d3126;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 680;
+  font-size: 26px;
+  font-family: Outfit, sans-serif;
+}
+
+.sb-2 p {
+  color: #494848;
+  font-size: 18px;
+  font-weight: 400;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  text-align: start;
+  font-family: Outfit, sans-serif;
+}
+
+#readmore-small {
+  width: 25%;
+  margin-top: 32px;
+  padding: 10px 30px;
+  font-size: 16.5px;
+  font-weight: 500;
+  display: flex;
+}
+
+.eight-page {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background: #f9f7f1;
+}
+
+.eight-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56px;
+}
+
+#eight-center {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  color: #1d3126;
+}
+
+.eb-info {
+  padding: 15px 35px;
+  background: #1d3126;
+  color: #ffffff;
+  width: 65%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.eight-box {
+  height: 489.325px;
+  width: 278px;
+  background: #ffffff;
+  border-radius: 25px;
+}
+
+.eight-wrapper h1 {
+  font-size: 54px;
+  color: #1d3126;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1;
+}
+
+.eight-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 90px;
+}
+
+.eb-center {
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-content: center;
+}
+
+.step p {
+  display: grid;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6b6a66;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.67;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #f3f2ed;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dotted #6b6a66;
+}
+
+.circle p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d3126;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.eb-img {
+  display: grid;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.eb-info p {
+  display: grid;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.eb-point p {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+  color: #6b6a66;
+}
+
+.ninth-page {
+  width: 100%;
+}
+
+.ninth-wrapper {
+  padding-top: 60px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-btn {
+  width: 10%;
+}
+
+.case-btn p {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  display: flex;
+  align-items: center;
+  border: #6b666a 1px solid;
+  border-radius: 100px;
+  padding: 5px 20px;
+  justify-content: center;
+  width: 100%;
+  color: #1d3126;
+  font-weight: 540;
+  font-size: 18px;
+}
+
+.n1-left h1 {
+  color: #1d3126;
+  font-size: 52px;
+  font-weight: 560;
+}
+
+.n1-right p {
+  color: #1d3126;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ninth-1st-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ninth-2nd-display {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 35px;
+  width: 100%;
+}
+
+.ninth-2nd-display {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+
+#n2-left {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\blog-image-5.jpeg");
+}
+
+.n2-left {
+  border-radius: 19px;
+  width: 60%;
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\case-study-1.jpeg");
+  height: 457px;
+  object-fit: contain;
+}
+
+#n2-rightimg {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\case-study-3.jpeg");
+}
+
+.n2-right {
+  height: 457px;
+  border-radius: 19px;
+  box-shadow: rgba(0, 0, 0, 0.21) 0 9px 9px 0;
+  width: 40%;
+}
+
+.n2-shiftl {
+  margin-left: 15px;
+}
+
+.n2-rightimg {
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  width: 100%;
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\case-study-2.jpeg");
+  height: 307px;
+  object-fit: cover;
+}
+
+.n2l-top {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+  margin-left: 452px;
+}
+
+.digi-btn p {
+  width: 80%;
+  background: #ffffff;
+  padding: 5px 10px;
+  color: #1d3126;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 100px;
+}
+
+.plus-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: #ffffff 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-btn p {
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.n2l-down {
+  display: flex;
+  gap: 15px;
+  margin-top: 265px;
+  border-top: #ffffff solid 0.76px;
+}
+
+.n2l-down h1 {
+  padding-left: 30px;
+  font-size: 32px;
+  margin-right: 12px;
+  color: #ffffff;
+}
+
+.circle50 {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  gap: 12px;
+  padding-right: 32px;
+  border-left: #ffffff solid 0.76px;
+}
+
+.x50 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x50 p {
+  margin-left: 32px;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: #05362c solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #05362c;
+}
+
+.cirlcetext p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 45px;
+}
+
+#ct-down {
+  padding-top: 204px;
+}
+
+.white-r_text {
+  background: #ffffff;
+  width: 100%;
+}
+
+.white-r_text h2 {
+  color: #1d3126;
+  padding-top: 21px;
+  margin: 0;
+  line-height: 1;
+}
+
+.white-r_text p {
+  color: #1d3126;
+  width: 100%;
+  border-bottom: #05362c solid 1px;
+  padding-bottom: 4px;
+  margin: 0;
+  line-height: 1.76;
+  font-size: 18px;
+}
+
+.white-bottom {
+  margin-top: 12px;
+  display: flex;
+  text-align: start;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+#lm p {
+  border: #7f9590 solid 1px;
+}
+
+#lm2 p {
+  border: #7f9590 solid 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #05362c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+}
+
+.tenth-view {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background: #f9f7f1;
+}
+
+.tenth-wrapper {
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testibtn p {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  width: 12%;
+  padding: 8px;
+  border-radius: 100px;
+  border: #1d3126 solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1d3126;
+  font-weight: 543;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1a3b2f;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.rating-card {
+  background-color: #052d1f;
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  position: relative;
+}
+
+.rating-title {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.rating-score {
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin: 5px 0;
+}
+
+.rating-source {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.rating-source span {
+  color: #aaa;
+}
+
+.avatar-circle {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border: 4px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feedback-box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.rating-badge {
+  background-color: #e9fbe7;
+  color: #5e9e56;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feedback-box h3 {
+  color: #1a3b2f;
+  margin-bottom: 10px;
+}
+
+.feedback-box p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #1a3b2f;
+}
+
+.client-position {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.Eleventh-content {
+  width: 100%;
+}
+
+.Eleventh-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 36px;
+}
+
+.load-more {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.load-more p {
+  width: 10%;
+  padding: 20px;
+  background: #1a3b2f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 560;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px;
+}
+
+/* content section*/
+.content-section {
+  width: 50%;
+}
+
+#content-section {
+  width: 20%;
+  border-right: #05362c solid 1px;
+  margin-right: 20px;
+  padding: 2px;
+}
+/*end of the eleven body styling*/
+
+.recent-btn {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\pattern1.jpeg");
+  width: 12%;
+  padding: 10px;
+  color: #1a3b2f;
+  font-weight: 509;
+  display: flex;
+  border-radius: 25px;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+}
+
+/* Section Numbering */
+.section-number {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.section-number::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 5px;
+  background-color: #1a3b2f;
+  border-radius: 3px;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-section h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+}
+
+.read-blog p {
+  color: #1a3b2f;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Header Section */
+
+.date-section {
+  margin: 0;
+  line-height: 1.23;
+}
+
+.date-section h2 {
+  background: #c6e96c;
+  font-size: 22px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  height: 30px;
+  border-radius: 13px;
+  color: #1a3b2f;
+  margin: 0;
+  line-height: 1;
+}
+
+.date-section p {
+  color: #7f8c8d;
+}
+
+.flex-content-section {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.flex-content-section img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+/*text section*/
+
+.text-section {
+  margin: 0;
+  line-height: 0.67;
+}
+
+.text-section h3 {
+  font-size: 18px;
+}
+
+.underline-bottom {
+  text-decoration: #1a3b2f underline;
+}
+
+/*end of text section*/
+
+.header-section h3 {
+  color: #7f8c8d;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+/* Article Sections */
+.article-section h3 {
+  color: #1a3b2f;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.article-section h4 {
+  color: #1a3b2f;
+  margin: 10px 0 5px;
+}
+
+.article-section p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 15px;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+/* CTA Section */
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.read-more {
+  background-color: #1a3b2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #1a3b2f;
+}
+
+.tags span {
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.last-section {
+  background: #002b22;
+  width: 100%;
+}
+
+.last-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last-display {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 67px;
+  padding-bottom: 56px;
+}
+
+/*below is the lastthree other last content*/
+.last-content h1 {
+  font-size: 55px;
+  color: white;
+}
+
+.last-content p {
+  font-size: 18px;
+  color: #667568;
+}
+
+.last-content-2 {
+  width: 100%;
+  background: white;
+  border-radius: 29px;
+}
+
+.second-last {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*this is where the stylingend for last content*/
+
+/*styling for 2 last content*/
+input {
+  margin-top: 45px;
+  padding: 25px 30px;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px;
+  background: #f9f8f2;
+  color: #aba9a3;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.signup-push {
+  margin-top: 28px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #002b22;
+  border-radius: 45px;
+  padding: 2px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.last-qoute p {
+  color: #a49cab;
+  font-size: 16px;
+  margin-left: 44px;
+  text-align: center;
+  padding-bottom: 27px;
+}
+/*styling for 2 last content*/
+
+/*styling for 3 last content*/
+.last-content-3 {
+  width: 234px;
+  height: 234px;
+  border-radius: 50%;
+  background: #c5e96b;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.last-content-3 p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #002b22;
+  margin: 0;
+  line-height: 1.56;
+}
+
+#big {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+#small {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.center-3 {
+  padding-top: 123px;
+  text-align: center;
+  margin: 0 !important;
+  padding-top: 42px;
+  line-height: 1;
+  padding: 20px;
+}
+/*styling for 3 last content*/
+.subscribe-btn p {
+  background: url("C:\Users\Balogun Mishael\Documents\React\coreItMain\frontend\public\green.jpeg");
+  padding: 10px;
+  width: 25%;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  border: white solid 1px;
+  border-radius: 25px;
+}
+
+/*Defualt desktop screen */
+
+/*styling the android screen size */
+@media screen and (max-width: 360px) {
+  /*styling here*/
 }

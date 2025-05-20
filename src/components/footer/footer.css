@@ -1,0 +1,22 @@
+footer {
+  background: #002b22;
+  width: 100%;
+  border-top: #004d12 solid 1px;
+}
+
+.footer-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*styling the android screen size */
+@media screen and (max-width: 360px) {
+  /*styling here*/
+}

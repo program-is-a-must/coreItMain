@@ -45,3 +45,8 @@ img {
 .country {
   margin-right: 12px;
 }
+
+/*styling the android screen size */
+@media screen and (max-width: 360px) {
+  /*styling here*/
+}
