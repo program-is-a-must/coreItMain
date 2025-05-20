@@ -1,11 +1,14 @@
 nav {
-  background: rgba(29, 49, 38, 0.8);
-
   font-size: 1.21rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+header {
+  width: 100%;
+  background: rgba(29, 49, 38, 0.8);
 }
 
 nav img {
@@ -47,6 +50,30 @@ img {
 }
 
 /*styling the android screen size */
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) {
   /*styling here*/
+
+  nav img {
+    height: 23px;
+  }
+
+  .search {
+    display: none;
+    width: 123%;
+    border: #537853;
+    background: #537853;
+    padding: 2px 17px;
+    border-radius: 35px;
+    text-align: left;
+    margin: 0;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .menus {
+    gap: 12px;
+    font-size: 12px;
+  }
 }
