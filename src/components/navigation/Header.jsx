@@ -1,32 +1,34 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <nav>
         <img
-          src='https://coreit.themepanthers.com/demo/wp-content/uploads/2024/10/logo-white.png'
-          alt='core it logo'
+          src="https://coreit.themepanthers.com/demo/wp-content/uploads/2024/10/logo-white.png"
+          alt="core it logo"
         />
 
-        <div className='search'>
+        <div className="search">
           <p>Search...</p>
         </div>
 
-        <div className='menus'>
-          <a href='Home.jsx'>Home</a>
-          <a href='Portfolio.jsx'>Portfolio</a>
-          <a href='Service.jsx'>Services</a>
-          <a href='Job.jsx'>Jobs</a>
-          <a href='Contact.jsx'>Contacts</a>
+        <div className="menus">
+          <Link to="/">Home</Link>
+          <Link to="Portfolio">Portfolio</Link>
+          <Link to="Service">Services</Link>
+          <Link to="Job">Jobs</Link>
+          <Link to="Contact">Contacts</Link>
+          <p className="android-menu">.......</p>
         </div>
 
-        <div className='started'>
+        <div className="started">
           <p>Get Started</p>
         </div>
 
-        <div className='country'>
+        <div className="country">
           <p>En</p>
         </div>
       </nav>

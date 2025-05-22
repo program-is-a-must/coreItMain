@@ -7,7 +7,9 @@ function Home() {
       <section className="first-show-container">
         <div className="first-show">
           <div className="margin">
-            <div className="flatbutton">unlocking potential</div>
+            <div className="flatbutton">
+              <p>unlocking potential</p>
+            </div>
             <div className="main-title">
               <h1 className="bold">Harness the</h1>
               <h1>Power of</h1>
@@ -128,7 +130,7 @@ function Home() {
               <div className="T-R-block">
                 <div className="T-R-Box">
                   <div className="T-R-Flex">
-                    <div className="border-flex">
+                    <div className="border-flex" id="border-flex-1 ">
                       <p>Our Growth, Compare to Last Financial Year</p>
                     </div>
 
@@ -139,7 +141,7 @@ function Home() {
                 </div>
                 <div className="T-R-Box">
                   <div className="T-R-Flex">
-                    <div className="border-flex">
+                    <div className="border-flex" id="border-flex-2">
                       <p>New Clients Login Our Site Every Month.</p>
                     </div>
 
@@ -273,9 +275,8 @@ function Home() {
           {/*border radius start */}
           <div className="fourth-call">
             <div className="call_flx">
-              <p>
-                <span>Discuss...</span>with our experts about your need.
-              </p>
+              <p id="tweak">Discuss...</p>
+              <p>with our experts about your need.</p>
               <img
                 src="https://coreit.themepanthers.com/demo/wp-content/uploads/2024/12/arrow.png"
                 alt="flow"

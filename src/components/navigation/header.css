@@ -11,6 +11,10 @@ header {
   background: rgba(29, 49, 38, 0.8);
 }
 
+.android-menu {
+  display: none;
+}
+
 nav img {
   height: 46px;
   display: flex;
@@ -50,11 +54,11 @@ img {
 }
 
 /*styling the android screen size */
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
   /*styling here*/
 
   nav img {
-    height: 23px;
+    height: 18px;
   }
 
   .search {
@@ -73,7 +77,25 @@ img {
   }
 
   .menus {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     gap: 12px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #off {
+    display: none;
+  }
+
+  header {
+    max-width: 100%;
+  }
+
+  .started {
     font-size: 12px;
   }
 }

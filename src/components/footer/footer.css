@@ -19,4 +19,11 @@ footer {
 /*styling the android screen size */
 @media screen and (max-width: 360px) {
   /*styling here*/
+  .footer-1 {
+    font-size: 9px;
+  }
+
+  .footer-2 {
+    font-size: 9px;
+  }
 }
